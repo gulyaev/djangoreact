@@ -62,9 +62,10 @@ REST_FRAMEWORK = {
 CORS_ORIGIN_ALLOW_ALL = True
 # Разрешить все источники
 CORS_ALLOW_ALL_ORIGINS = True
-# CORS_ALLOWED_ORIGINS = [
-#     'http://5.159.100.113/',  # ваш фронтенд
-# ]
+CORS_ALLOWED_ORIGINS = [
+    'http://localhost:80',  # Указываем фронтенд, работающий на порту 80
+    'http://5.159.100.113',  # Второй источник, если нужно
+]
 
 ROOT_URLCONF = 'djangoreact.urls'
 
