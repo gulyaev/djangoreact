@@ -59,13 +59,13 @@ REST_FRAMEWORK = {
     ]
 }
 
-CORS_ORIGIN_ALLOW_ALL = True
+# CORS_ORIGIN_ALLOW_ALL = True # Устаревшая настройка
 # Разрешить все источники
-CORS_ALLOW_ALL_ORIGINS = True
-CORS_ORIGIN_ALLOW_ALL = True
+CORS_ALLOW_ALL_ORIGINS = True # Верная настройка
+# CORS_ORIGIN_ALLOW_ALL = True # Устаревшая настройка
 CORS_ALLOWED_ORIGINS = [
     'http://localhost:80',  # Указываем фронтенд, работающий на порту 80
-    'http://5.159.100.113',  # Второй источник, если нужно
+    'http://5.159.100.113',  # Второй источник, если нужно - адрес сервера
 ]
 # Для разрешения всех HTTP методов и заголовков
 CORS_ALLOW_ALL_METHODS = True
